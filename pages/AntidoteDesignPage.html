@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabe Simao Portfolio Antidote</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/specimen/Kumbh+Sans -->
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">  <!-- https://fontawesome.com/-->  
+    <link rel="stylesheet" href="../css/magnific-popup.css">       <!-- https://dimsemenov.com/plugins/magnific-popup/ -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">        <!-- https://getbootstrap.com/ -->
+    <link rel="stylesheet" href="../slick/slick.min.css">          <!-- https://kenwheeler.github.io/slick/ -->
+    <link rel="stylesheet" href="../slick/slick-theme.css">
+    <link rel="stylesheet" href="../css/Main.css">
+
+</head>
+<body>    
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Leftside bar -->
+            <div id="tm-sidebar" class="tm-sidebar"> 
+                <nav class="tm-nav">
+                    <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div>
+                        <div class="tm-brand-boxTitle">
+                            <img src="../img/gabePortfolio.png" alt="Gabriel Simao Picture" style="width: 250px;height:250px;">
+                        </div> 
+                        <div class="nav-center-div">
+                        <ul class="tm-contact-social">
+                            <li><a href="https://github.com/gssimao"  target="_blank" class="tm-social-link"><i class="fab fa-github"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/gabriel-salles-simao/" target="_blank" class="tm-social-link"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="https://gssimao.itch.io" target="_blank" class="tm-social-link"><i class="fab fa-itch-io"></i></a></li>
+                            <li><a href="mailto: gsallessimao@hotmail.com"><i class="fas fa-at mr-2 tm-contact-link-icon"></i></a></li>
+                        </ul>
+                        </div>
+                        <div class="tm-brand-box">
+                            <h1 class="tm-brand">Gabe<br> Simao<br></h1>
+                        </div> 
+                        <div class="tm-brand-boxTitle">
+                            <h3>Game Designer<br>and<br>Programmer</h3>
+                        </div>                
+                    </div>
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">
+                            <i class="fas fa-home nav-icon"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../Resume/GabrielSimaoResume.pdf" target="_blank" class="nav-link">
+                            <i class="fas fa-envelope nav-icon"></i>
+                            Resume
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../pages/construction.html"class="nav-link">
+                            <i class="fas fa-circle-notch nav-icon"></i>
+                            Side Projects
+                        </a>
+                    </li>
+
+                </nav>
+            </div>
+            
+            <div class="tm-main">
+                <!-- Home section -->
+                <div class="tm-section-wrap">
+                    <!--<div class="tm-parallax" data-parallax="scroll" data-image-src="img/img-01.jpg"></div> -->
+                    <div class="introHeader">  
+                        <h1 class="tm-text-primary">Game Developer Portfolio</h1>  
+                        <hr class="mb-5">
+                    </div>              
+                    <section id="home" class="tm-section">
+                         <!-- Project Title Start edit -->
+                        <h2 class="tm-text-primary left-space">Antidote Development Process</h2>
+                        <hr class="mb-5">
+                        <div class="row tm-row-about">
+                            <div class="tm-col-about tm-col-about-l">
+                                <p class="left-space"> </p>
+                                <p>After 5 months of development in this project, the team had to be divided and directed to work from home because of COVID-19. The project development ended shortly after with the graduation of the team lead designer.</p>
+                                <p><strong>About the game:</strong> Antidote is a cure finding game where the player is a scientist trying to manufacture a cure for a pathogen. The game mechanics involves the player trying different stats in the lab and taking notes on what is most effective to kill the pathogen without killing too many neutral cells.</p>
+                                <p class="left-space"><strong> Overview:</strong></p>
+                                <p><u>This page will cover the following topics:</u></p>
+                                <ul>
+                                    <li>Cell Behaviors in C#</li>
+                                    <li>Flocking cells behavior</li>
+                                    <li>The Gameplay, and other Unity implementations</li>
+                                </ul>
+                            </div>
+                            <div class="tm-col-about tm-col-about-r">
+                                <img src="https://media.giphy.com/media/cvAbT5vmFZ5EOSsAW9/giphy.gif" alt="Image" class="img-fluid tm-img-about left-space">
+                                <p class="left-space"><strong>Info </strong></p>
+                                <p class="left-space"><strong>Platforms:</strong> PC</p>
+                                <p class="left-space"><strong>Project Length:</strong> 5 months</p>
+                                <p class="left-space"><strong>Engine, Tools, and Language:</strong> Unity, Github, C# Visual Studio</p>
+                            </div>
+                        </div>
+                       
+                        <!-- TOPIC 1 -->
+                        <h2 class="tm-text-secondary left-space">Cell Behaviors</h2>
+                        <hr class="mb-5">
+                        <div class="row tm-row-about">
+                            <div class="tm-col-about tm-col-about-l">
+                                <p >Antidote has a total of 3 cells:</p>
+                                <ul>
+                                    <li >Pathogen: cells that are bad for you, and the goal is to kill them all</li>
+                                    <li >Neutral cells, or bodily cells: Cells that represent the human body cells</li>
+                                    <li >Cure: Cells that the player can modify to create an effective cure against pathogen cells</li>
+                                </ul>
+                               
+                                <p >All the cells previously stated have the same properties:</p>
+                                <ul>
+                                    <li >Health</li>
+                                    <li >Stamina</li>
+                                    <li >Aggression</li>
+                                    <li >Reproduction rate</li>
+                                </ul>
+                                <p>These cells react in a different ways when in proximity to their friends and foes. These reactions were discussed between the team member and addressed as rules or behaviors</p>
+                       
+                            </div>
+                            <div class="tm-col-about tm-col-about-r">
+                                <img src="https://media.giphy.com/media/9p1y969wM5iAilvaUi/giphy.gif" alt="Image" class="img-fluid tm-img-about left-space">
+                                <p class="left-space">Cell recovering health and stamina meeting requirements for reproduction</p>
+                                <img src="../img/AntCells.PNG" alt="Image" style="height: 300px; display: block; margin: auto;">
+                                <p class="left-space">All cells present in the game</p>
+                            </div> 
+                        </div>  
+
+                        <div class="row tm-row-about">
+                            
+                            <div class="tm-col-about tm-col-about-l">
+                                <p >Rules are a simple set of statements that handles what happens between the cells despise of their stats, supporting the behaviors they could switch to.</p>
+                                <p >Cells rules:</p>
+                                <ul>
+                                    <li >Cells are always consuming stamina, if stamina runs out, they will consume Health instead</li>
+                                    <li >Killing an enemy cell gives Heath in the form of food (support “Aggressive” behavior).</li>
+                                    <li >Cells that are modified by the player, by default, will not attack the neutral cells unless they are too aggressive (support “Last Stand” behavior)</li>
+                                    <li >If a cell is touching an opposing cell, example pathogen and neutral, they will both make a check against their aggression to see if they do damage to the other</li>
+                                    <li >If a cell is in proximity to a cell of the same type, example pathogen and pathogen, then there is a chance to create another cell by consuming stamina and checking the reproduction rate. If the random chance to reproduce matches or is below the reproduction rate the cell will consume an amount of stamina to create a new cell (support “Flee” behavior)</li>
+                                </ul>
+                            </div> 
+
+                            <div class="tm-col-about tm-col-about-r">
+                                <img src="https://media.giphy.com/media/zRD93ex03ZHpTMvAnD/giphy-downsized-large.gif" alt="Image" class="img-fluid tm-img-about left-space">
+                                <p class="left-space ">Blue cells switch from Aggression to Flee/Flocking</p>
+                            </div> 
+                        </div>
+                        
+                        <div class="row tm-row-about">
+                            <div class="tm-col-about tm-col-about-l">
+                                <p >Behaviors are states on which a cell can be in or switch to after doing a randomized roll check against their own stats.</p>
+                                <p >Cells behaviors:</p>
+                                <ul>
+                                    <li >Aggressive behavior: If a cell HP is below their aggression, that cell will hunt other opposing cells with extra speed to try to survive. Cells with high aggression are called hunters, and cells with low aggression are called passive.</li>
+                                    <li >Flee and reproduce: Cells that are full in HP and have a high number in reproduction will flee from battles and flock with similar cells to try reproducing, making a stronger flock.</li>
+                                    <li >Last Stand: Cells that are modified by the player, if their aggression is too high, can hunt neutral cells instead of pathogen cells to try to survive for longer.</li>
+                                </ul>
+                            </div>
+                            <div class="tm-col-about tm-col-about-r">
+                                <img src="https://media.giphy.com/media/ttTNdzqa96tFstWUTV/giphy.gif" alt="Image" class="img-fluid tm-img-about left-space">
+                                <p class="left-space ">Cells switch from flocking to Aggressive behavior after Reproduction</p>
+                            </div>
+                            <p >The fun of Antidote is to explore the DNA helix with different colors to take notes on what the color represents and how they affect the cells behaviors during the game. After exploring what the cells can do and what the colors mean, the player can control exactly how to build their cure and beat the pathogen with the lowest amount of consumption, or casualties, of neutral cells to do so.</p>
+                            
+                        </div> 
+                            
+
+                        <!-- TOPIC 2 -->
+                        <h2 class="tm-text-secondary left-space">Flocking cells behavior</h2>
+                        <hr class="mb-5">
+                        <div class="row tm-row-about">
+                            <div class="row tm-row-about">
+                                <div class="tm-col-about tm-col-about-l">
+                                    <p >The cells are following each other with the flock system, and hunting other cells with A* pathfinding</p>
+                                    <p >Since I was the main programmer for the project and I was only at my junior year at college, I decided to follow <a href="https://www.youtube.com/watch?v=mjKINQigAE4" class="link" target="_blank"><u> a tutorial </u></a> that could help me understand and implement the flock behavior for the project.</p>
+
+                                    
+                                    </div>
+                                <div class="tm-col-about tm-col-about-r">
+                                    <img src="https://media.giphy.com/media/IONBb7TBprlJgDV1uv/giphy.gif" alt="Image" class="img-fluid tm-img-about left-space">
+                                    <p class="left-space ">Alpha gameplay of both navigation systems running</p>
+                                </div>
+                                <div class="tm-col-about tm-col-about-l">
+                                    <p >After solving a few bugs between the systems, the implementation that switches between behaviors proved that they could co-exist and operate in a way that would simulate the actions of a cell.</p>
+                                </div>
+                                <div class="tm-col-about tm-col-about-r">
+                                    <img src="https://media.giphy.com/media/bVVHm4q8k4jMHuk2aF/giphy.gif" alt="Image" class="img-fluid tm-img-about left-space">
+                                    <p class="left-space ">Cells flocking with their own kind</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- TOPIC 3 -->
+                        <h2 class="tm-text-secondary left-space">The Gameplay, and other Unity implementations</h2>
+                        <hr class="mb-5">
+                        <div class="row tm-row-about">
+
+                            <div class="tm-col-about tm-col-about-l">
+                                <p >The DNA Helix Selection</p>
+                                <p >There are a total of 4 different factors that can affect the cell. Initial Health, static aggression, static reproduction rate, and number of cells that will spawn at the beginning of the test.</p>
+                                <p >The DNA helix in the game has a total of 5 slots for possible combinations, as well as 5 different colors for the player to pick from. If the player decides to go with red, yellow, red, blue, red, then that array of 5 colors will be compared the array of correct combinations.</p>
+                                <p >The system initiates the game by picking one of the stats, for example initial health, and generating an array of 5 randomized combination of color. Those 5 colors if are fully matched, they will give the player’s cell a total of 100% initial health bonus.</p>
+                                <p >For every correct match that the player does, the cells are rewarded with 20% additional points for that status.</p>
+                                <p >If the player guesses Blue at position 2, however, in the correct combination for initial health blue happens to be at position 4, the player is rewarded with half of the bonus a full match would give, or 10%.</p>
+                                
+                            </div>
+                            <div class="tm-col-about tm-col-about-r">
+                                <img src="https://media.giphy.com/media/uPV1ex0XCuZ8vPwdfZ/giphy.gif" alt="Image" class="img-fluid tm-img-about left-space">
+                                <p class="left-space ">Helix DNA selection</p>
+                                <p>DNA Helix percentage example:</p>
+                                <ul>
+                                    <li>Correct sequence for Initial Health</li>
+                                    <li>P1: Red, P2: Green, P3: Red, P4: Blue, P5: Yellow</li>
+                                    <li>Player’s initial guess</li>
+                                    <li>P1: Red, P2: Blue, P3: Black, P4: Black, P5: Black</li>
+                                </ul>
+                                <p>Red at position 1 gives 20% because it matches the right position, P1, and the right color, Red.</p>
+                                <p>Blue at position 4 gives 10% because it is a correct guess, the color blue is present in the player's guess, but not in the right position.</p>
+                                <p>A bonus of 30% will be granted to the player's initial health cells.</p>
+                            </div>
+                            <p>This system was designed for game designers to have control over what type of combinations they would like to make for player to explore in future levels against other pathogens. The randomization was implemented in the prototype as a way to play with the system and test how fun the game can be.</p>
+                            <div class="tm-col-about tm-col-about-l">
+                                <p >Other Unity implementations I made:</p>
+                                <ul>
+                                    <li>Added UI and programmed the backend for player interaction in the HUB menu</li>
+                                    <li>Implemented art and animation for the cells using the base Unity animation system</li>
+                                    <li>Implemented selection screen for doctors that can give extra bonus for cells, or hints in what color to pick for a better effect in one of the 4 main statuses.</li>
+                                </ul>
+                            </div>
+                            <div class="tm-col-about tm-col-about-r">
+                                <img src="../img/AntOffice.PNG" alt="Image" class="img-fluid tm-img-about left-space">
+                                <p class="left-space ">Office Hub Menu</p>
+                            </div>
+
+                            <div class="tm-col-about tm-col-about-l">
+                                <ul>
+                                    <li>Added scene manager to jump between scenes</li>
+                                    <li>Added art for the Title screen and UI</li>
+                                </ul>
+                            </div>
+                            <div class="tm-col-about tm-col-about-r">
+                                <img src="../img/AntTitle.PNG" alt="Image" class="img-fluid tm-img-about left-space">
+                                <p class="left-space ">Title Screen</p>
+                            </div>
+                        </div>
+                </div>
+
+                <!-- Contact section -->
+                <div class="tm-section-wrap">
+                   <!-- <div class="tm-parallax" data-parallax="scroll" data-image-src="img/img-04.jpg"></div>-->
+                    <div id="contact" class="tm-section">
+                        <h2 class="tm-text-primary"> Contact Information</h2>
+                        <hr class="mb-5">
+                        <div class="row">
+                            <div class="col-xl-6 tm-contact-col-r">
+            
+                                <!-- Addictional information-->
+                                <address>
+                                    <a href="mailto: gsallessimao@hotmail.com">
+                                        <i class="fas fa-at mr-2 tm-contact-link-icon"></i>
+                                        Email: gsallessimao@hotmail.com <br>
+                                    </a>
+                                    <a href="../Resume/GabrielSimaoResume.pdf" target="_blank" download>
+                                        <i class="fas fa-envelope nav-icon"></i>Download Resume
+                                    </a>
+                                    
+                                </address>
+                                
+
+                                <ul class="tm-contact-social">
+                                    <li><a href="https://github.com/gssimao"  target="_blank" class="tm-social-link"><i class="fab fa-github"></i></a></li>
+                                    <li><a href="https://gssimao.itch.io" target="_blank" class="tm-social-link"><i class="fab fa-itch-io"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/gabriel-salles-simao/" target="_blank" class="tm-social-link"><i class="fab fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               
+            </div> <!-- .tm-main -->                      
+        </div> 
+    </div> <!-- .container-fluid -->
+    <script src="../js/jquery-3.4.1.min.js"></script>          
+    <script src="../js/jquery.singlePageNav.min.js"></script>  
+    <script src="../js/parallax/parallax.min.js"></script>     
+    <script src="../js/imagesloaded.pkgd.min.js"></script>     
+    <script src="../js/isotope.pkgd.min.js"></script>          
+    <script src="../js/jquery.magnific-popup.min.js"></script> 
+    <script src="../slick/slick.min.js"></script>              
+    <script src="../js/templatemo-script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabe Simao Portfolio Stresstris</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/specimen/Kumbh+Sans -->
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">  <!-- https://fontawesome.com/-->  
+    <link rel="stylesheet" href="../css/magnific-popup.css">       <!-- https://dimsemenov.com/plugins/magnific-popup/ -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">        <!-- https://getbootstrap.com/ -->
+    <link rel="stylesheet" href="../slick/slick.min.css">          <!-- https://kenwheeler.github.io/slick/ -->
+    <link rel="stylesheet" href="../slick/slick-theme.css">
+    <link rel="stylesheet" href="../css/Main.css">
+
+</head>
+<body>    
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Leftside bar -->
+            <div id="tm-sidebar" class="tm-sidebar"> 
+                <nav class="tm-nav">
+                    <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div>
+                        <div class="tm-brand-boxTitle">
+                            <img src="../img/gabePortfolio.png" alt="Gabriel Simao Picture" style="width: 250px;height:250px;">
+                        </div> 
+                        <div class="nav-center-div">
+                        <ul class="tm-contact-social">
+                            <li><a href="https://github.com/gssimao"  target="_blank" class="tm-social-link"><i class="fab fa-github"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/gabriel-salles-simao/" target="_blank" class="tm-social-link"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="https://gssimao.itch.io" target="_blank" class="tm-social-link"><i class="fab fa-itch-io"></i></a></li>
+                            <li><a href="mailto: gsallessimao@hotmail.com"><i class="fas fa-at mr-2 tm-contact-link-icon"></i></a></li>
+                        </ul>
+                        </div>
+                        <div class="tm-brand-box">
+                            <h1 class="tm-brand">Gabe<br> Simao<br></h1>
+                        </div> 
+                        <div class="tm-brand-boxTitle">
+                            <h3>Game Designer<br>and<br>Programmer</h3>
+                        </div>                
+                    </div>
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">
+                            <i class="fas fa-home nav-icon"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../Resume/GabrielSimaoResume.pdf" target="_blank" class="nav-link">
+                            <i class="fas fa-envelope nav-icon"></i>
+                            Resume
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../pages/construction.html"class="nav-link">
+                            <i class="fas fa-circle-notch nav-icon"></i>
+                            Side Projects
+                        </a>
+                    </li>
+
+                </nav>
+            </div>
+            
+            <div class="tm-main">
+                <!-- Home section -->
+                <div class="tm-section-wrap">
+                    <!--<div class="tm-parallax" data-parallax="scroll" data-image-src="img/img-01.jpg"></div> -->
+                    <div class="introHeader">  
+                        <h1 class="tm-text-primary">Game Developer Portfolio</h1>  
+                        <hr class="mb-5">
+                    </div>              
+                    <section id="home" class="tm-section">
+                         <!-- Project Title Start edit -->
+                        <h2 class="tm-text-primary left-space">Stresstris Development Process</h2>
+                        <hr class="mb-5">
+                        <div class="row tm-row-about">
+                            <div class="tm-col-about tm-col-about-l">
+                                
+                                <p class="left-space"><strong>About the game:</strong> This game is a short experience that mixes platformers and Tetris. It allows the path to the top of the map to be unique every time the game is played because all the blocks are randomly selected and randomly placed to fall on the grid. <br>The game ramps up the difficulty with stop points that help clear the screen, and events that will slowly delete the floor until only the Tetris blocks that fell remain. To help the player we have 2 power ups that can be used during the game, one making you faster and the other allowing you to use a second jump.</p>
+                                <p class="left-space"><strong> Overview:</strong></p>
+                                <p><u>This page will cover the following topics:</u></p>
+                                <ul>
+                                    <li>Mechanics, jumping, scaling, respawning, speed boost, and second jump</li>
+                                    <li>Tetris blocks generating a level</li>
+                                    <li>Design and implementation of the title and pause screen of the game</li>
+                                    <li>Design Lead, team task management</li>
+                                </ul>
+                            </div>
+                            <div class="tm-col-about tm-col-about-r">
+                                <img src="https://media.giphy.com/media/PIHoxn3sJfdNLyxCL5/giphy-downsized-large.gif" alt="Image" class="img-fluid tm-img-about left-space">
+                                <p class="left-space"><strong>Info </strong></p>
+                                <p class="left-space"><strong>Link:</strong> <u><a href="https://gssimao.itch.io/stresstris" target="_blank">Itch.io Page</a></u></p>
+                                <p class="left-space"><strong>Platforms:</strong> PC</p>
+                                <p class="left-space"><strong>Project Length:</strong> 3 months</p>
+                                <p class="left-space"><strong>Engine, Tools, and Language:</strong> Unity, Adobe Suite, Blender, C# Visual Studio</p>
+                            </div>
+                        </div>
+                       
+                        <!-- TOPIC 1 -->
+                        <h2 class="tm-text-secondary left-space">Mechanics, jumping, scaling, respawning, speed boost, and second jump</h2>
+                        <hr class="mb-5">
+                        <div class="row tm-row-about">
+                            <div class="tm-col-about tm-col-about-l">
+                                <p >Stresstris has a simple mechanics that involves jumping, scaling cubes, and using items.</p>
+                                <p >Jump allows for exploration, but it also has its limitation due to the distance and height. Since the player might not make a complete jump into a safe part of a cube the logical implementation of scaling up a cube was made. Climbing up a cube also allowed for better platforming and vertical exploration.</p>
+                            </div>
+                            <div class="tm-col-about tm-col-about-r">
+                                <img src="https://media.giphy.com/media/rXd6EOJmmi7xJxaOeP/giphy-downsized-large.gif" alt="Image" class="img-fluid tm-img-about left-space">
+                                <p class="left-space">Scaling up blocks</p>
+                                
+                            </div>
+                            
+                            <div class="tm-col-about tm-col-about-l">
+                                <p >The next level to help on platforming was the use of items to boost the player’s speed with the energy drink or allowing for a second jump ability with the expresso coffee. The speed boost would give the player a better chance to reach spots that are further away, while the double jump gives the player a better chance to scale up a block that seem to be too tall to reach.</p>
+                            </div> 
+
+                            <div class="tm-col-about tm-col-about-r">
+                                <img src="https://media.giphy.com/media/VAJUVKTLpLZhKuQRbi/giphy.gif" alt="Image" class="img-fluid tm-img-about left-space">
+                                <p class="left-space">Coffee Boost</p>
+                            </div> 
+                            <div class="tm-col-about tm-col-about-l">
+                                <p >To scale up the difficulty, the player will encounter a big retro video game console block that slows the player and does not allow jumps if currently standing on top of it. The reason behind the model of a video game was to tie with the narrative aspect of the game, the player being a college student and the game being a source of distraction from his goals.</p>
+                            </div> 
+                                
+                            <div class="tm-col-about tm-col-about-r">
+                                <img src="https://media.giphy.com/media/bAnV3TVD6uU7JiIl3k/giphy.gif" alt="Image" class="img-fluid tm-img-about left-space">
+                                <p class="left-space">Double Jump</p>
+                            </div> 
+                        </div>
+                        <!-- TOPIC 2 -->
+                        <h2 class="tm-text-secondary left-space">Tetris blocks generating a level</h2>
+                        <hr class="mb-5">
+                        <div class="row tm-row-about">
+                            <div class="tm-col-about tm-col-about-l">
+                                <p >An important design pillar in Stresstris is the no bounds or safeguards help, if the player falls off the map he will respawn at the safe point. The same goes in the scenario of the player being squished by a block that is currently falling. To help drive that idea home, after the game reaches a certain point in time, the base floor will start to shrink leaving only the Tetris pieces that fell in the map.</p>
+                                <p >The fun of Stresstris lies in the randomness of the blocks and the items that boost your progress. The intricate tunnel of Tetris was worrying at the beginning, because of everything being laid out at random it was impossible to ensure a path to go up the tower of Tetris. However, the fun realization that the team had with testing the game was that because of the way the pieces are shaped, there would always be a little path that could be made to the top. The game became complex in a way that we as a team were not expecting it to be. Because this mechanic worked so well, we abandoned the idea of spanning premade blocks that would ensure some type of path.</p>
+                            </div>
+                            <div class="tm-col-about tm-col-about-r">
+                                <img src="https://media.giphy.com/media/0GpyIyO8yyN4q9KysQ/giphy-downsized-large.gif" alt="Image" class="img-fluid tm-img-about left-space">
+                                <p class="left-space">Floor shrink</p>
+                            </div>
+                        </div>
+                        <!-- TOPIC 3 -->
+                        <h2 class="tm-text-secondary left-space">Design and implementation of the title and pause screen of the game</h2>
+                        <hr class="mb-5">
+                        <div class="row tm-row-about">
+                            <div class="tm-col-about tm-col-about-l">
+                                <p >The UI in the game was made with Illustrator and Photoshop while using references for Tetris pieces of other versions of the 2D classic game Tetris.</p>
+                                <p >It was important for me to use our Tetris blocks in the title screen. The way that I envisioned that was to put the camera facing up while the blocks are falling into it. That aspect of seeing the blocks coming to fall on you is one of the big design pillars of Stresstris, the stress of running to not be smashed between two blocks. </p>
+                                <p >After adding the blocks falling, it was only a matter of adjusting certain spawn positions to create the right feel and to delete boxes that are no longer in the screen.</p>
+                            </div>
+                            <div class="tm-col-about tm-col-about-r">
+                                <img src="https://media.giphy.com/media/1sTCOSAGba9NX5SZxZ/giphy.gif" alt="Image" class="img-fluid tm-img-about left-space">
+                                <p class="left-space">Title Screen final design</p>
+                            </div>
+
+                            <div class="tm-col-about tm-col-about-l">
+                                <p >The last thing added to the game screen was a simple loop of 2D sprites that are constantly falling in the screen, just to go along with the design of the classic Tetris bringing a retro and arcade feel to the start menu.</p>
+                                <p >The pause Menu uses the same type of font and style I created for the main menu, with a simple addition to the theme song playing in a slower version.</p>
+                            </div>
+                            <div class="tm-col-about tm-col-about-r">
+                                <img src="../img/stresstrisPause.PNG" alt="Image" class="img-fluid tm-img-about left-space">
+                                <p class="left-space">Pause Menu</p>
+                            </div>
+                        </div>
+                        <!-- TOPIC 4 -->
+                        <h2 class="tm-text-secondary left-space">Design Lead, team task management</h2>
+                        <hr class="mb-5">
+                        <div class="row tm-row-about">
+                            <div class="tm-col-about tm-col-about-l">
+                                <p >Being the design is a challenging position that teaches a lot of incredible skills. Some of things I’ve learned in the position were:</p>
+                                <ul >
+                                    <li>Delegating tasks among the group</li>
+                                    <li>Assessing skill levels of the team members</li>
+                                    <li>Utilizing software to help the process and organization such as Gantt charts, Trello, google drive, and GitHub</li>
+                                    <li>Learning to scope the project or cut features for the right amount of time that was left. Trying my best to avoide scope creep</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                </div>
+
+                <!-- Contact section -->
+                <div class="tm-section-wrap">
+                   <!-- <div class="tm-parallax" data-parallax="scroll" data-image-src="img/img-04.jpg"></div>-->
+                    <div id="contact" class="tm-section">
+                        <h2 class="tm-text-primary"> Contact Information</h2>
+                        <hr class="mb-5">
+                        <div class="row">
+                            <div class="col-xl-6 tm-contact-col-r">
+            
+                                <!-- Addictional information-->
+                                <address>
+                                    <a href="mailto: gsallessimao@hotmail.com">
+                                        <i class="fas fa-at mr-2 tm-contact-link-icon"></i>
+                                        Email: gsallessimao@hotmail.com <br>
+                                    </a>
+                                    <a href="../Resume/GabrielSimaoResume.pdf" target="_blank" download>
+                                        <i class="fas fa-envelope nav-icon"></i>Download Resume
+                                    </a>
+                                    
+                                </address>
+                                
+
+                                <ul class="tm-contact-social">
+                                    <li><a href="https://github.com/gssimao"  target="_blank" class="tm-social-link"><i class="fab fa-github"></i></a></li>
+                                    <li><a href="https://gssimao.itch.io" target="_blank" class="tm-social-link"><i class="fab fa-itch-io"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/gabriel-salles-simao/" target="_blank" class="tm-social-link"><i class="fab fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               
+            </div> <!-- .tm-main -->                      
+        </div> 
+    </div> <!-- .container-fluid -->
+    <script src="../js/jquery-3.4.1.min.js"></script>          
+    <script src="../js/jquery.singlePageNav.min.js"></script>  
+    <script src="../js/parallax/parallax.min.js"></script>     
+    <script src="../js/imagesloaded.pkgd.min.js"></script>     
+    <script src="../js/isotope.pkgd.min.js"></script>          
+    <script src="../js/jquery.magnific-popup.min.js"></script> 
+    <script src="../slick/slick.min.js"></script>              
+    <script src="../js/templatemo-script.js"></script>
+</body>
+</html> 
